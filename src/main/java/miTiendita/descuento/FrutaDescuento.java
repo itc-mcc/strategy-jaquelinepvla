@@ -6,8 +6,6 @@ public class FrutaDescuento implements IDesctoStrategy {
 
     @Override
     public float getDescto(Venta v) {
-        // TODO Auto-generated method stub
-        System.out.println("Sin descuento ...");
-        return 0;
+        return 0.15f;
     }
 }
