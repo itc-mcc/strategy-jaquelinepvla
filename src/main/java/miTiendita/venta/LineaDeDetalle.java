@@ -5,16 +5,16 @@ import miTiendita.productos.Producto;
 public class LineaDeDetalle {
     double ctd;
     Producto p;
-    int clave;
+   
 
-    public  LineaDeDetalle(Producto p, double ctd, int clave)
+    public  LineaDeDetalle(Producto p, double ctd)
     {
         this.p = p;
         this.ctd = ctd;
-        this.clave = clave;
+        
     }
 
-    Producto getP() {
+    public Producto getP() {
         return p;
         
     }
@@ -23,7 +23,4 @@ public class LineaDeDetalle {
 
     }
 
-    int getClave(){
-        return clave;
-    }
 }
