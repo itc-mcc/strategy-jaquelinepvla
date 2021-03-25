@@ -9,7 +9,7 @@ public class AdultoMayor implements IDesctoStrategy {
     public float getDescto(Venta v) {
        float total= 0.0f;
         for(LineaDeDetalle ld: v.getLd()){
-            total += ld.getP().getPunit() * ld.getP().getCtd() * 0.05f;
+            total += ld.getP().getPunit() * ld.getCtd() * 0.05f;
         }
         return total;
     }    

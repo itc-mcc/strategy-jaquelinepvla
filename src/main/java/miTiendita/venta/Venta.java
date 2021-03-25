@@ -66,7 +66,8 @@ public class Venta {
         for(LineaDeDetalle ld: this.getLd()) {
             total += ld.getCtd()*ld.getP().getPunit();
         }
-        return total- IDescto.getDescto(this) + 0.16*(total- IDescto.getDescto(this));
+        return 1.16*(total- IDescto.getDescto(this));
+
     }
     public List<LineaDeDetalle> getLd() {
         return ld;

@@ -18,7 +18,7 @@ public class LineaDeDetalle {
         return p;
         
     }
-    double getCtd(){
+    public double getCtd(){
         return ctd;
 
     }
