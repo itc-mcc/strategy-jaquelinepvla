@@ -10,10 +10,10 @@ public class FrutaDescuento implements IDesctoStrategy {
         for(LineaDeDetalle ld: v.getLd()){
             switch(ld.getP().getClave()){
             case 6:
-                total += ld.getP().getPunit()*ld.getP().getCtd()*0.15f;
+                total += ld.getP().getPunit()*ld.getCtd()*0.15f;
                 break;
             case 7:
-               total += ld.getP().getPunit()*ld.getP().getCtd()*0.15f;
+               total += ld.getP().getPunit()*ld.getCtd()*0.15f;
             }
         }
         return total;
